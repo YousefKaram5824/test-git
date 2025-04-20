@@ -7,7 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     this->setWindowState(Qt::WindowMaximized);
-
+this->showFullScreen();
 }
 
 MainWindow::~MainWindow()
@@ -23,4 +23,6 @@ void MainWindow::on_loginButton_clicked()
         QMessageBox::information(this,"Alert","Login Done Successfully");
     }
 }
+
+
 
